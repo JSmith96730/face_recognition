@@ -75,7 +75,7 @@ while True:
         # Draw a label with a name below the face
         cv2.rectangle(frame, (left, bottom - 25), (right, bottom), (0, 0, 255), cv2.FILLED)
         font = cv2.FONT_HERSHEY_DUPLEX
-        cv2.putText(frame, name, (left + 6, bottom - 6), font, 0.5, (255, 255, 255), 1)
+        cv2.putText(frame, name, (left + 6, bottom - 6), font, 0.5, (255, 0, 0), 1)
 
     # Write the resulting image to the output video file
     print("Writing frame {} / {}".format(frame_number, length))
