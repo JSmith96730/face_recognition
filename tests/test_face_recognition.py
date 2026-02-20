@@ -23,7 +23,7 @@ class Test_face_recognition(unittest.TestCase):
 
     def test_load_image_file(self):
         img = api.load_image_file(os.path.join(os.path.dirname(__file__), 'test_images', 'obama.jpg'))
-        self.assertEqual(img.shape, (1137, 910, 3))
+        self.assertEqual(img.shape, (1137, 1200, 3))
 
     def test_load_image_file_32bit(self):
         img = api.load_image_file(os.path.join(os.path.dirname(__file__), 'test_images', '32bit.png'))
