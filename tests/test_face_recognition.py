@@ -27,7 +27,7 @@ class Test_face_recognition(unittest.TestCase):
 
     def test_load_image_file_32bit(self):
         img = api.load_image_file(os.path.join(os.path.dirname(__file__), 'test_images', '32bit.png'))
-        self.assertEqual(img.shape, (1200, 626, 3))
+        self.assertEqual(img.shape, (1200, 626, 30))
 
     def test_raw_face_locations(self):
         img = api.load_image_file(os.path.join(os.path.dirname(__file__), 'test_images', 'obama.jpg'))
