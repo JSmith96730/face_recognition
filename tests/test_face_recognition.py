@@ -150,7 +150,7 @@ class Test_face_recognition(unittest.TestCase):
         encodings = api.face_encodings(img)
 
         self.assertEqual(len(encodings), 1)
-        self.assertEqual(len(encodings[0]), 128)
+        self.assertEqual(len(encodings[0]), 256)
 
     def test_face_encodings_large_model(self):
         img = api.load_image_file(os.path.join(os.path.dirname(__file__), 'test_images', 'obama.jpg'))
