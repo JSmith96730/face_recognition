@@ -14,7 +14,7 @@ import numpy as np
 # If this fails, make sure you have a camera connected to the RPi and that you
 # enabled your camera in raspi-config and rebooted first.
 camera = picamera.PiCamera()
-camera.resolution = (320, 240)
+camera.resolution = (320, 480)
 output = np.empty((240, 320, 3), dtype=np.uint8)
 
 # Load a sample picture and learn how to recognize it.
