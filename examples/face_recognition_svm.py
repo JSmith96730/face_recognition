@@ -64,7 +64,7 @@ clf = svm.SVC(gamma='scale')
 clf.fit(encodings,names)
 
 # Load the test image with unknown faces into a numpy array
-test_image = face_recognition.load_image_file('test_image.jpg')
+test_image = face_recognition.load_image_file('1.jpg')
 
 # Find all the faces in the test image using the default HOG-based model
 face_locations = face_recognition.face_locations(test_image)
